@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VEGAS SNACK'S</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>VEGAS</strong> SNACK'S</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>SUPER PAPAYA AVENA</h1>
+									</header>
+									<span class="image main"><img src="images/jugos/jugo2.jpg" alt="" /></span>
+									<hr class="major" />
+								</section>
+								
+								<div class="row">
+									<div class="table-wrapper 6u 12u$(medium)">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Ingrediente</th>
+													<th>Porcion</th>
+												</tr>
+											</thead>
+											<tbody>
+											</tr>
+											<td>AVENA QUAKER</td>
+											<td>1/3 TAZA </td>
+										</tr>
+										</tr>
+											<td>LECHE DE ALMENDRA</td>
+											<td>1 TAZA </td>
+										</tr>
+										</tr>
+											<td>YOGURT GRIEGO NATURAL (SIN AZÚCAR)</td>
+											<td>1/3 TAZA </td>
+										</tr>
+										</tr>
+											<td>SEMILLAS DE LINAZA</td>
+											<td>1 CDA (7 G) </td>
+										</tr>
+										</tr>
+											<td>DURAZNO PICADO</td>
+											<td>1 PIEZA </td>
+										</tr>
+										</tr>
+											<td>EXTRACTO DE VAINILLA</td>
+											<td>1/4 CDITA </td>
+										</tr>
+										</tr>
+											<td>ALMENDRAS</td>
+											<td>6 PZAS </td>
+										</tr>
+										</tr>
+											<td>FRUTOS SECOS</td>
+											<td>5 MITADES </td>
+										</tr>
+										</tr>
+											<td>ENDULZANTE </td>
+											<td>AL GUSTO</td>
+										</tr>
+										</tr>
+											<td>DURAZNO PICADO</td>
+											<td>1/4 PIEZA</td>
+										</tr>
+											</tbody>
+										</table>
+									</div>
+																					
+									<div class="6u 12u$(medium)">
+										<h3>Preparación</h3>
+										<p><br> Mezclar en un recipiente con tapa (usé una mason jar) las hojuelas de avena, leche de almendras, yogurt griego sin azúcar, semillas de linaza, duraznos picados, extracto de vainilla y endulzar al gusto.
+
+											<br>Tapar y refrigerar toda la noche.
+											
+											<br>Al día siguiente servir con más duraznos picados frescos</p>
+									</div>
+								</div>
+								<hr class="major">
+
+								<div class="12u box" id="muro">
+									<h3>COMENTARIOS</h3>
+									
+								</div>
+
+								<hr class="major">
+								<!-- Break -->
+								<div class="box comentar">
+									<form name="formu" >
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="nombre" id="demo-name" value="" placeholder="Nombre" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="email" name="correo" id="demo-email" value="" placeholder="Correo Electronico" />
+											</div>
+											<!-- Break -->
+											<div class="12u$">
+												<textarea name="area" id="demo-message" placeholder="¿Que te parecio la reseta?" rows="5"></textarea>
+											</div>
+											<!-- Break -->
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="subir comentario" class="special" /></li>
+													<li><input type="reset" value="borrar" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<script>
+									window.onload=function(){
+										document.formu.addEventListener('submit', comentar);
+									}
+									function comentar(evObject){
+										evObject.preventDefault();
+										var enviar=true;
+										if(!(/^\S+/.test(document.formu.nombre.value))){
+											enviar=false;
+											alert("ingrese el nombre");
+										}
+										if(!(/\S+@[a-zA-Z]+.[a-zA-Z]+/.test(document.formu.correo.value))){
+											alert("correo invalido");
+											enviar=false;
+										}
+										if(!(/\S+/.test(document.formu.area.value))){
+											alert("debes ascribir algo");
+											enviar=false;
+										}
+										if (enviar){
+											// document.formu.submit();
+											document.getElementById("muro").innerHTML=document.getElementById("muro").innerHTML
+												+"<blockquote>"+"<h4>"+document.formu.nombre.value+"</h4>"+document.formu.area.value+"</blockquote>"
+											document.formu.area.value="";
+											document.formu.area.focus();
+										}
+									}
+								</script>
+
+								<section>
+									<div class="alto"></div>
+								</section>
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Inicio</a></li>
+									<li>
+										<span class="opener">Resetas</span>
+										<ul>
+											<li><a href="desayunos.html">Desayunos</a></li>
+											<li><a href="jugos.html">Jugos</a></li>
+										</ul>
+									</li>
+									<li><a href="inscripciones.html">Inscripciones</a></li>
+									<li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+								</ul>
+							</nav>
+						
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Contactenos</h2>
+								</header>
+								<ul class="contact">
+									<p>Ten la mejor asesoría en antencion a clientes, contactenos cualquier momento, la atención en nuestro tienda fisica es de lunes a viernes</p>
+									<li class="fa-envelope-o"><a href="#">vegasSnacks@pedidos.com</a></li>
+									<li class="fa-phone">(+591) 6548712</li>
+									<li class="fa-home">El alto #8254<br />
+									Sencata, TN 325-15</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
